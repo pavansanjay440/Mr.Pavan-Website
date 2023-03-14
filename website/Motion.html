@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Motion Emojis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .emoji {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        cursor: pointer;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .emoji:hover {
+        animation-name: rotate;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Motion Emojis</h1>
+    <div class="emoji" title="Smiling Face">&#x1F600;</div>
+    <div class="emoji" title="Grinning Face">&#x1F601;</div>
+    <div class="emoji" title="Smiling Face with Heart-Eyes">&#x1F60D;</div>
+    <div class="emoji" title="Face with Tears of Joy">&#x1F602;</div>
+    <div class="emoji" title="Face Blowing a Kiss">&#x1F618;</div>
+  </body>
+</html>
