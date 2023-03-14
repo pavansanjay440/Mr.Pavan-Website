@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Define the animation */
+      @keyframes moveBikes {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(100%);
+        }
+      }
+
+      /* Apply the animation to the bike images */
+      .bike {
+        position: absolute;
+        top: 100px;
+        animation: moveBikes 5s linear infinite;
+      }
+
+      /* Set the size of the bike images */
+      .bike img {
+        width: 100px;
+      }
+
+      /* Set the position of each bike */
+      .bike1 {
+        left: 0;
+      }
+
+      .bike2 {
+        left: 200px;
+      }
+
+      .bike3 {
+        left: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Create three bike images -->
+    <div class="bike bike1">
+      <img src="https://www.w3schools.com/howto/img_bike.jpg" alt="bike">
+    </div>
+    <div class="bike bike2">
+      <img src="https://www.w3schools.com/howto/img_bike.jpg" alt="bike">
+    </div>
+    <div class="bike bike3">
+      <img src="https://www.w3schools.com/howto/img_bike.jpg" alt="bike">
+    </div>
+  </body>
+</html>
